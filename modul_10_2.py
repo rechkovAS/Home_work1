@@ -29,7 +29,7 @@ class Knight(Thread):
             bot -= self.power
             print(f'{self.name} сражается {day_war} дней(дня) ..., осталось {bot} воинов.')
             day_war += 1
-        print(f'{self.name} одержал победу спустя {day_war} дней(дня)!')
+        print(f'{self.name} одержал победу спустя {day_war-1} дней(дня)!')
 
 
 first_knight = Knight('Sir Lancelot', 10)
