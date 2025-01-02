@@ -67,7 +67,7 @@ class Cafe:
         while not self.queue.empty() or any([True if not table.guest is None else False for table in self.tables]):#
            for table in self.tables:
                 if not table.guest is None and not table.guest.is_alive():
-                    print(f'{table.guest.name} покушал(-а) и ушёл(ушла)', not self.queue.empty())
+                    print(f'{table.guest.name} покушал(-а) и ушёл(ушла)')
                     print(f'Стол номер {table.number} свободен')
                     table.guest = None
                 if not self.queue.empty() and table.guest is None:
